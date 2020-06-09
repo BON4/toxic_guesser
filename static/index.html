@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Comments Moderator AI</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/view.css" media="all">
+</head>
+
+<body id="main_body">
+    <div id="form_container">
+
+        <h1><a>Untitled Form</a></h1>
+        <form id="myform" class="appnitro" method="post" action="#">
+            <dl id="results">
+                <div id="result">
+                    <dt>toxic</dt>
+                    <dd id="toxic"></dd>
+                </div>
+                <div id="result">
+                    <dt>severe toxic</dt>
+                    <dd id="severe_toxic"></dd>
+                </div>
+                <div id="result">
+                    <dt>obscene</dt>
+                    <dd id="obscene"></dd>
+                </div>
+                <div id="result">
+                    <dt>insult</dt>
+                    <dd id="insult"></dd>
+                </div>
+                <div id="result">
+                    <dt>identity_hate</dt>
+                    <dd id="identity_hate"></dd>
+                </div>
+            </dl>
+            <ul>
+
+                <li id="li_1">
+                    <textarea id="mytextarea"></textarea>
+                </li>
+
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="112352" />
+
+                    <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script src="static/main.js"></script>
+</body>
+
+</html>
